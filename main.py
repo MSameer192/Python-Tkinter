@@ -106,7 +106,7 @@ class DateEntryForm:
             custom_message_box = tk.Toplevel(self.window)
             custom_message_box.title("User Information")
 
-            message = f"First Name: {first_name}\nLast Name: {last_name}\nTitle: {title}\nAge: {age}\nNationality: {nationality}\nRegistration Status: {registration_status}\nCompleted Courses: {completed_courses}\nSemesters: {semesters}"
+            message = f"Name: {title} {first_name} {last_name}\nAge: {age}\nNationality: {nationality}\nRegistration Status: You are {registration_status}\nYour semester is {semesters} and the number of courses you have completed is/are {completed_courses}"
 
             text_widget = Text(custom_message_box, wrap=tk.WORD, height=10, width=50, font=("Helvetica", 10), padx=10, pady=10)  # Adjust font family and size
             text_widget.insert(tk.END, message)
